@@ -37,8 +37,8 @@ const MainPage = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            {tableOfContent.map((toc) => (
-              <div className="flex items-center space-x-2 py-2">
+            {tableOfContent.map((toc, index) => (
+              <div className="flex items-center space-x-2 py-2" key={index}>
                 <span className="flex h-2 w-2 rounded-full bg-sky-500" />
                 <div className="space-y-1">
                   <p className="text-sm font-medium leading-none">
